@@ -4,7 +4,7 @@
         <h1> This is The Homepage</h1>
     </div>
     <div class="home-button">
-        <button>Home Button</button>
+        <button v-on:click="logMessage">Home Button</button>
     </div>
 </div>
 </template>
@@ -12,7 +12,12 @@
 
 <script>
 export default {
-    name: "HomeButtonComponent"
+    name: "HomeButtonComponent",
+    methods: {
+        logMessage() {
+            console.log(this.$route.fullPath);
+        }
+    }
 }
 </script>
 

@@ -4,14 +4,19 @@
             <h1>Presenting Today's News</h1>
         </div>
         <div class="news-button">
-            <button>News Button</button>
+            <button v-on:click="logMessage">News Button</button>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "NewsButtonComponent"
+    name: "NewsButtonComponent",
+    methods: {
+        logMessage() {
+            console.log(this.$route.fullPath);
+        }
+    }
 }
 </script>
 

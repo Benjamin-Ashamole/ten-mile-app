@@ -33,7 +33,8 @@ html {
 
 body {
   background-color: seashell;
-  height:100%
+  height:100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 </style>
